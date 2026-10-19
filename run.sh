@@ -12,7 +12,9 @@ if [[ -n "${VENV_DIR}" ]]; then
 fi
 
 while true; do
-    git pull
+    if [ -d .git ]; then
+        git pull
+    fi
     poetry install
     FONTCONFIG_FILE=$PWD/extra/fonts.conf poetry run python -m tle
 
