@@ -3,7 +3,6 @@
 .codex/
 data/
 logs/
-environment
 .venv/
 __pycache__/
 *.pyc

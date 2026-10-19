@@ -34,6 +34,7 @@ RUN mkdir -p ./data/assets/fonts
 COPY ./tle ./tle
 COPY ./extra/fonts.conf ./extra/fonts.conf
 COPY ./run.sh ./run.sh
+COPY ./environment ./environment
 RUN cp \
     /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc \
     /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc \

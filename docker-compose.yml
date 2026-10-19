@@ -4,6 +4,5 @@ services:
       context: .
       dockerfile: Dockerfile
     volumes:
-      - ./environment:/TLE/environment:ro
       - ./data/db:/TLE/data/db
       - ./data/misc:/TLE/data/misc
